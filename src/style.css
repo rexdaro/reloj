@@ -2,8 +2,8 @@ h1 {
   color: rgb(156, 197, 145);
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
-  
-
+  background-color: rgb(109, 0, 0);
+  border-radius: 1rem;
 }
 
 body {
@@ -13,11 +13,24 @@ body {
 .reloj{
   background-color: rgb(255, 255, 255);
   color: rgb(46, 3, 3);
-  text-align: center;
-  height: 10rem;
-  font-size: 8rem;
+  text-align: center; 
+  width: 100%;
+  font-size: 5rem;
   font-family: 'Roboto Mono', monospace;
   font-weight: 900;
+  border-radius: 2rem; 
+  height: 100%;
+  
+}
+.titulo{
+  padding: 10px;
+  width: 16rem;
+  
 }
 
+#app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 /* pequeño push 3*/

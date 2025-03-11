@@ -1,14 +1,20 @@
 import './style.css'
 
-import { setupCounter } from './counter.js'
+import { getCurrentTime } from './getCurrentTime.js'
+import { updateClock } from './updateClock.js';
 
 document.querySelector('#app').innerHTML = `
-  <div>
-    <h1>Reloj Argentina</h1>    
+  <div class = 'titulo'>
+    <h1>Reloj Digital</h1>    
   </div>
-  <div class='reloj'>
+  <div class='reloj' id='reloj'>
     00:00:00 
   </div>
 `
+export const clock = document.getElementById('reloj');
 
-setupCounter(document.querySelector('#counter'))
+
+setInterval(updateClock, 1000);
+updateClock();
+
+
